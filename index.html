@@ -79,15 +79,15 @@ const ADMIN_UID = "4ec479fd-9863-41a6-b730-9962681b3222";
 const db = window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
 const defaults = [
 {name:"Méru Top-up",description:"Rechaj Méru. Kontakte nou pou kantite ak pri.",category:"Rechaj",price:"Mande pri",emoji:"💎"},
-{name:"Wise",description:"Sèvis Wise. Kontakte nou pou detay.",category:"Lòt",price:"Mande pri",emoji:"💸"},
-{name:"Netflix prive",description:"Abònman Netflix prive.",category:"Abònman",price:"Mande pri",emoji:"🎬"},
-{name:"Free Fire",description:"Top-up Free Fire / Garena.",category:"Gaming",price:"Mande pri",emoji:"🔥"},
+{name:"Wise",description:"Sèvis Wise. Kontakte nou pou detay.",category:"Lòt",price:"Mande pri",image_url:"https://cdn.simpleicons.org/wise/9FE870",emoji:"💸"},
+{name:"Netflix prive",description:"Abònman Netflix prive.",category:"Abònman",price:"Mande pri",image_url:"https://cdn.simpleicons.org/netflix/E50914",emoji:"🎬"},
+{name:"Free Fire",description:"Top-up Free Fire / Garena.",category:"Gaming",price:"Mande pri",image_url:"https://cdn.simpleicons.org/garena/FF4500",emoji:"🔥"},
 {name:"eFootball 27",description:"Sèvis eFootball 27.",category:"Gaming",price:"Mande pri",emoji:"⚽"},
-{name:"Google Play",description:"Kat kado Android.",category:"Kado",price:"Mande pri",emoji:"🎁"},
-{name:"Apple / App Store",description:"Kat kado iPhone ak Apple.",category:"Kado",price:"Mande pri",emoji:"🍏"},
-{name:"Echanj kont eFootball",description:"Echanj kont eFootball.",category:"Gaming",price:"Mande pri",emoji:"🔄"},
+{name:"Google Play",description:"Kat kado Android.",category:"Kado",price:"Mande pri",image_url:"https://cdn.simpleicons.org/googleplay/34A853",emo
+{name:"Apple / App Store",description:"Kat kado iPhone ak Apple.",category:"Kado",price:"Mande pri",image_url:"https://cdn.simpleicons.org/appstore/FFFFFF",emoji:"🍏"},
+{name:"Echanj kont eFootball",description:"Echanj kont eFootball.",category:"Gaming",price:"Mande pri",emoji:"⚽"},
 {name:"Vann kont DLS",description:"Kont DLS. Kontakte nou pou detay.",category:"Gaming",price:"Mande pri",emoji:"⚽"},
-{name:"TikTok",description:"Sèvis TikTok. Kontakte nou pou detay.",category:"Lòt",price:"Mande pri",emoji:"🎵"}
+{name:"TikTok",description:"Sèvis TikTok. Kontakte nou pou detay.",category:"Lòt",price:"Mande pri",image_url:"https://cdn.simpleicons.org/tiktok/FFFFFF",emoji:"🎵"}
 ];
 let products = [];
 function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
